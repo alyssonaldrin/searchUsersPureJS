@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+#container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#inputContainer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#inputUser {
+    width: 100%;
+    margin-left: 2%;
+}
+#inputButton {
+    margin-right: 2%;
+}
+#results {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+#resultsFound {
+    width: 47%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px 0 0 10px;
+    border: 1px solid lightgray;
+}
+#resultsStats {
+    width: 47%;
+    height: 100%;
+    margin-right: 2%;
+    padding: 20px 0 10px 10px;
+    border: 1px solid lightgray;
+}
+.user {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: normal;
+}
+.tabTitle {
+    font-size: 32px;
+    font-weight: bold;
+}
