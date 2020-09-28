@@ -13,13 +13,12 @@ tabStats = document.querySelector("#resultsStats");
 inputUser = document.querySelector("#inputUser");
 inputButton = document.querySelector("#inputButton");
 
-fetchUsers();
+loadUsers();
 
 async function fetchUsers() {
     const res = await fetch("https://randomuser.me/api/?seed=javascript&results=100&nat=BR&noinfo");
     const json = await res.json();
-    allUsers = json;
-    allUsers = allUsers.results.map(user => {
+    return json.results.map(user => {
         const { name, picture, dob, gender} = user;
         return {
             name: name.first + " " + name.last,
@@ -28,6 +27,10 @@ async function fetchUsers() {
             gender
         }
     });
+}
+
+async function loadUsers() {
+    allUsers = await fetchUsers();
     submitInput();
 }
 
