@@ -135,7 +135,7 @@ function renderStats() {
                     Soma das idades: <strong>${sumOfAges}</strong>
                 </div>
                 <div>
-                    Média das idades: <strong>${averageOfAges}</strong>
+                    Média das idades: <strong>${parseFloat(averageOfAges.toFixed(2))}</strong>
                 </div>
             </div>
         </div>
